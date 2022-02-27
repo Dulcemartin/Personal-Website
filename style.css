@@ -1,0 +1,61 @@
+.header{
+    background-color: purple;
+    color: white;
+    padding:3px;
+    position: -webkit-sticky;
+    position: sticky;
+
+}
+
+body{
+    background-color:lightpink;
+    text-align: center;
+}
+
+.nav{
+    
+    word-spacing: 80px;
+    justify-content: center;
+    text-align: in-line;
+     
+    
+}
+ .picture{
+     border-radius: 5%;
+     border: 5px solid rgb(170, 130, 170);
+     justify-content: left;
+    }
+
+     .headings{
+         text-align: center;
+         color:rgb(187, 147, 187);
+         
+     }
+
+   .body1{
+       background-image: url(/milad-fakurian-Tc_4PdN-Fq0-unsplash.jpg);
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+
+   a:link{
+       color:rosybrown
+   }
+
+   a:visited{
+       color:slateblue
+   }
+
+   a:hover{
+       background-color:lightpink;
+   }
+
+   .sticky{
+       position:-webkit-sticky;
+       position: sticky;
+       top:0;
+   }
+
+   div ul{
+       list-style-type: none;
+   }
