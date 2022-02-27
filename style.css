@@ -1,29 +1,17 @@
-.header{
-    background-color: purple;
-    color: white;
-    padding:3px;
-    position: -webkit-sticky;
-    position: sticky;
 
-}
 
 body{
     background-color:lightpink;
     text-align: center;
 }
 
-.nav{
-    
-    word-spacing: 80px;
-    justify-content: center;
-    text-align: in-line;
-     
-    
-}
+
+         
+
  .picture{
      border-radius: 5%;
      border: 5px solid rgb(170, 130, 170);
-     justify-content: left;
+   
     }
 
      .headings{
