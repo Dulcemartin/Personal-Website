@@ -38,11 +38,58 @@
   <br>
   <br>
         <div>
-            <h1 class="headings">Additional Information</h1>
+            <h1 class="headings">About me</h1>
         </div>
         <br>
 
-        <a href="index.html" target="_blank" download>Download My Resume</a>
+        <div class="carousel ">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Assets/IMG_0160.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Assets/IMG_4261.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Assets/IMG_6377.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <br>
+
+        <div>
+          <p style="text-align:center;">
+            One of the things I enjoy the most is traveling with my family. Now that my kids are older, we are able to do it often and I love that they get to experience other cultures and places.
+            </p>
+            </div>
+            
+            <div>
+              <p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+            </div>
 
         
         

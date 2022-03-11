@@ -46,6 +46,13 @@ body{
      padding: 5px;
   }
   
+  .carousel {
+       width: 70%;
+       margin: auto;
+    }
+    
+  }
+
 
    a:link{
        color:rosybrown
