@@ -1,30 +1,51 @@
 
 
-body{
-    background-color:lightpink;
-    text-align: center;
-}
-
-
-         
-
- .picture{
-     border-radius: 5%;
-     border: 5px solid rgb(170, 130, 170);
-   
-    }
-
      .headings{
          text-align: center;
-         color:rgb(187, 147, 187);
+         color:#8d99ae;
          
      }
 
-   .body1{
-       background-image: url(/milad-fakurian-Tc_4PdN-Fq0-unsplash.jpg);
+body{
+    background-color:#eae4e9;
+    text-align: center;
+}
+
+   .picture{
+       background-image: url(/Dulcepic.jpg);
        background-size: cover;
+       height: 600px;
+       background-position: center;
        background-repeat: no-repeat;
+       position: relative;
+       background-color: lightgrey;
+       padding: 5px;
    }
+
+  
+  .picture-text {
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  } 
+
+  .about-flex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dee2e6;
+  }
+
+  .about-headings{
+     background-color: #8d99ae;
+     text-align: center;
+     color: white;
+     padding: 5px;
+  }
+  
 
    a:link{
        color:rosybrown
@@ -35,7 +56,7 @@ body{
    }
 
    a:hover{
-       background-color:lightpink;
+       background-color:#b8bedd;
    }
 
    .sticky{
