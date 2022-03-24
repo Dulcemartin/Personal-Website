@@ -81,6 +81,26 @@
     <br>
 
   </div>
+  <table class="table" id="references"></table>
+
+  <script>
+  let text = "<tr><th>Favorite places to visit</th><th>Best time to travel</th></tr>";
+
+  var places = [
+            { name: "Hawaii", time: "Summer"},
+            { name: "Mexico", time: "Anytime"},
+            { name: "Yellowstone", time: "Off season months"},
+            { name: "Las Vegas", time:"Anytime" }
+        ];
+
+        for (let i = 0; i < places.length; i++) {
+            text += "<tr><td>" + places[i].name + "</td><td> " + places[i].time + "</td></tr>";
+        }
+
+        document.getElementById("references").innerHTML = text;
+      
+</script>
+
 
    <div>
 <script>
