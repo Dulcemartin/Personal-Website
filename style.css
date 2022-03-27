@@ -87,5 +87,12 @@ body{
       
    }
 
+   .button{
+       border-radius: 10%;
+       color: white;
+       background-color: rgb(83, 83, 131);
+
+   }
+
   
   
