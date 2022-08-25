@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dulce's Resume Page</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+            div {
+              border: 3px solid transparent;
+              padding: 5px;
+            }
+            .img2 {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script> 
           $(document).ready(function(){
             $("button").click(function(){
@@ -15,229 +26,153 @@
             });
           });
           </script> 
+        <title>Dulce's Resume Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="style.css">
     </head>
 
-     <!-- Body -->
-  <Body>
-  <!-- Navigation Bar -->
-        <nav class=" nav navbar navbar-expand-lg navbar-light bg-light sticky nav1">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <img src="/CA401639-84E8-4B1E-8624-E48451CA74D2.jpg"alt="logo" height="75" class="d-inline-block align-text-top">
-      
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="About.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      
-        
-            <br>        
-            <br>
-            <button class="button">No pictures please!</button>
-            <br>
-            <br>
+    <!-- Body -->
+ <Body>
+ <!-- Navigation Bar -->
+       <nav class=" navbar navbar-expand-lg navbar-light bg-light sticky nav1">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#"></a>
+           <img src="Assets/logo.jpg"alt="logo" height="75" class="d-inline-block align-text-top">
+     
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <!-- <ul class="navbar-nav">
+               <li class="nav-item"> -->
+                 <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="About.html">About</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="contactf.php">Contact</a>
+             </ul>
+           </div>
+         </div>
+       </nav>
 
-   <div>
-    <p class="picture" >
-      <div class="picture-text">
-        <h1 style="font-size:50px"> Hey, I am Dulce Martinez</h1>
-        <h3>Welcome to my website</h3>
-       
-      </p>
-    </div>
+       <div>
+
+        <p class="heading" style="text-align: center">HEY! WELCOME TO MY SITE</p>
+
+        <div class="clearfix, sections">
+          <br>        
+            <br>
+            <button class="buttonjs">Click me</button>
+            <br>
+            <br>
+          <img class="img2" src="Assets/IMG_0500.JPG" alt="Picture" width="200" height="200">
+          <p>
+              <span style="text-align:justify"> My name is Dulce Matinez, I am a stay at home mom and <b>personal assistant</b>  to a 7 year old boy and 5 year old twin girls. 
+              I am also the co-owner of a Mexican Restaurant called Senor Pollo Mexican Grill located in Taylorsville, Utah.
+            </span>
+            </p>
+
+            <p>
+            <span style="text-align:justify"> 
+                I am currently taking a Web Developing course at Salt Lake Community College. My goal is to improve my coding skills and be able to transition to a career in the Tech Industry. 
+            </span>
+            </p>
+            <p>
+                <span>
+                    My hobbies include traveling, learning new skills, hiking with my family, reading, hanging out with friends and exercising. </span>
+            </p>
+        </div>
+
         <br>
         <br>
-  <!-- <Body-Content> -->
-  <div>
-            <h4 class="about-headings">PERSONAL BIO</h4>
+        <div>
 
-            <div class="about-flex" >
-              <br>
-              <div >I am a stay at home mom and business entrepreneur. I <b>love</b> traveling, learning new skills, hiking, dancing, reading and exercising</div>
-                <br>
+            <p class="heading" style="text-align: center">RESUME HIGHLIGHTS</p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h3>Education</h3>
+                  <p class="title">University of Utah</p>
+                  <p>Bachelor's Degree in Psychology with a Minor in Sociology
+                      <br>
+                  </p>
+                  
+                </div>
               </div>
-              <br>
+            </div>
 
-<!-- <EDUCATION> -->
-                
-                  <h4 class="about-headings">EDUCATION</h4>
-                  <Div class="about-flex">
-                    <BR>
-                
-                    <b>University of Utah (May 2020) </b>
-                    <ul class="ul">
-                    <li>Bachelor's Degree in Psychology </li>
-                    <li>Minor in Sociology </li>
-                
-                  </ul>
-                  <b>Salt Lake Community College (May 2009) </b>
-                  <ul>
-                    <li>Associate of Science in Psychology </li>
-                    <li>Graduated with Honors </li>
-                  </ul>
-                  </ul>
-                
-                  <b>Highland High School (May 2005) </b>
-                  <ul>
-                    <li>High School Diploma </li>
-                    <li>Graduated with Honors </li>
-                  </ul>
-                
-                </Div>
-
-            <br>
           
-            <h4 class="about-headings">PROFESSIONAL EXPERIENCE</h4>
-          
-            <div class="about-flex">
-              <br>
-            <b>Business Owner (2018 - PRESENT)</b>
-            Senor Pollo Mexican Grill - 1775 West 5400 South Taylorsville, UT
-            <br>
-            <!-- <ul>
-              <li>Oversee daily operations of the restaurant to ensure that safety and food quality standards are maintained.
-              </li>
-              <li>Train staff to follow restaurant procedures. </li>
-              <li>Organize schedules and record payroll data. </li>
-              <li>Order food and other supplies while observing budget limits. </li>
-              <li>Train staff to follow restaurant procedures. </li>
-              <li>Help with social media content. </li>
-              <li>Provide excellent customer service and handle complaints. </li>
-              <li>Keep inventory organized. </li>
-            </ul>
-           -->
-            <br><b>Underwriter (2012 - 2017)</b>
-            Prime Acceptance Corporation - 7927 South High Point Pkwy. Sandy UT </br>
-            <!-- <ul>
-              <li>Receive, analyze, and underwrite loans according to the company policy and guidelines. </li>
-              <li>Maintain departmental procedures to ensure credit quality guidelines and policies established by the company
-                were maintained. </li>
-              <li>Review and analysis income, credit reports, salary, employment history and debt rations to determine a
-                borrower's credit-worthiness.
-              </li>
-              <li>Build relationships with dealerships and customers to complete transactions in a quick and efficient manner.
-              </li>
-            </ul> -->
-          
-            <br><b> Communication/Sales specialist (2010 - 2012)</b>
-            Sprint - 2723 West 3500 South, West Valley City, Utah 84119 </br>
-            <!-- <ul>
-              <li>Support customers with questions about billing, phone performance, upgrades or any other problem related to
-                their phone service. </li>
-              <li> Take payments and process them according to the company's guidelines. </li>
-              <li>Help company in reaching monthly goals in sales and customer service satisfaction. </li>
-            </ul> -->
-          
-            <br><b>Office Secretary and Tax Preparer (2007 - 2010) </b>
-            Translating specialists- 4095 West Sams Blvd. Kearns UT 84118</br>
-            <br>
-            <!-- <ul>
-              <li>Help customers file their personal and business taxes. Inform them about new tax regulations and help them
-                prepare for future declarations. </li>
-              <li>Translation of documents including but not limited to birth certificates, medical records, school records, and
-                any legal documents.</li>
-              <li>Fill out immigration forms for personal and family petitions. Help clients gather and organize all required
-                documentation and evidence to complete and send paperwork to immigration offices.</li>
-            </ul> -->
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h3>Professional Experience</h3>
+                  <p class="title">Bussiness Owner</p>
+                  <p>Senor Pollo Mexican Grill  1775 West 5400 South Taylorsville, UT</p>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h3>Technical Skills</h3>
+                  <p class="title">Designer</p>
+                  <p>Basic knowledge in HTML and CSS languages <br>Bilingual - native Spanish speaker and fluent in English</p>
+                  
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h3>Core Competencies</h3>
+                  <p class="title"></p>
+                  <p>Conflict resolution</p>
+                  <p>Attention to detail</p>
+                 
+                </div>
+              </div>
+            </div>
 
-        <br>
+          
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h3>Certificates and Awards</h3>
+                  <p class="title">Tech-moms program certificate</p>
+                  <p>Completion of a 9 week technical program in web development, primarily focused on HTML and CSS </p>
+                  
+                </div>
+              </div>
+            </div>
             
-        
-            <h4 class="about-headings">TECHNICAL SKILLS</h4>
-        
-            <div class="about-flex">
-              <br>
-            <ul>
-              <li>Proficient in Microsoft word and PowerPoint. </li>
-              <li>Basic knowledge in HTML and CSS languages. </li>
-              <li>Bilingual - native Spanish speaker and fluent in English</li>
-            </ul>
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h3>Projects</h3>
+                  <p class="title">Web Dev Enthusiast</p>
+                  <p>Completed a website development project using skills learned at TECH-MOMS program</p>
+                  
+                </div>
+                </div>
             </div>
-          
-         
-              <br>
-            <h4 class="about-headings">CORE COMPETENCIES</h4>
-            <div class="about-flex">
-              <br>
-            <ul>
-              <li class="about-flex">Multitasking </li>
-              Able to handle different projects at a time and complete them as required.
-            </ul>
-          
-            <ul>
-              <li class="about-flex"> Attention to detail </li>
-              Qualified to verify essential information to avoid gaps or surprises in projects.
-            </ul>
-            <ul>
-              <li class="about-flex">Conflict resolution </li>
-              Prepared to deescalate different situations and come to an agreement with parties involved
-            </ul>
-            <ul>
-              <li class="about-flex"> Delegation </li>
-              Competent to trust and encourage teammates to perform distinct roles that would allow me to focus on higher or more
-              important tasks
-            </ul>
-            <ul>
-              <li class="about-flex">Relationship skills </li>
-              Able to network, communicate and respect others
-          
-            </ul>
-            <ul>
-              <li class="about-flex">Teamwork </li>
-              Able to work with others towards reaching common goals
-            </ul>
-            <ul>
-              <li class="about-flex">Customer service </li>
-              Provide the best experience for others and help resolve any issues
-            </ul>
-            <ul>
-              <li class="about-flex">Integrity </li>
-              Being honest, accept mistakes even if that brings negative consequences and follow through on any agreement.
-            </ul>
-            <ul>
-              <li class="about-flex">  Organization and scheduling </li>
-              Qualified to finish projects in time and organize my time to meet required deadlines.
-            </ul>
+            <div>
+              <p><a href="index.html" target="blank"><button class="button">Click here for full resume</button></a></p>
             </div>
-            <br>
-            <h4 class="about-headings">CERTIFICATES AND AWARDS</h4>
-            
-            <div class="about-flex">
-              <br>
-            <ul>
-              <li style="text-align:center;">Tech-moms program certificate </li>
-              Completion of a 9 week technical program in web development, primarily focused on HTML and CSS languages.
-            </ul>
-            <br>
-            </div>
-            <br>
-            <h4 class="about-headings">PROJECTS</h4>
-            <div class="about-flex">
-              <br>
-            <ul>
-              <li>Completed a website development project using skills learned at TECH-MOMS program and uploaded to GIT-HUB
-                <a href="https://dulcemartin.github.io/Restaurant-Project/" target="-blank"> (Link to Project website)</a>
-              </li>
-            </ul>
-            </div>
-            <br>
+
+                <br>
             <h4 class="about-headings">REFERENCES</h4>
 
             <div class="about-flex">
@@ -249,19 +184,17 @@
             </ul>
             <br>
           </div>
-          <div>
-            <br>
-
-            <a href="index.html" target="_blank" download>Download My Resume</a>
-          </div>
+          
             <hr>
             <div class="about-headings">
             <a style="text-align:center" href="#Top">Scroll to the top</a>
             </div>
             <br>
-         
+            <footer class="about-headings">
+              2022 Dulce Martinez - All rights reserved   |  
 
-        
+            </footer>
+          
 
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
           
@@ -270,3 +203,4 @@
        
 
 </html>
+          

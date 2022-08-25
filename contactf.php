@@ -13,7 +13,7 @@
        <nav class=" nav navbar navbar-expand-lg navbar-light bg-light sticky">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
-          <img src="Assets/logo.jpg" alt="logo" height="75" class="d-inline-block align-text-top">
+          <img src="/CA401639-84E8-4B1E-8624-E48451CA74D2.jpg" alt="logo" height="75" class="d-inline-block align-text-top">
    
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,9 +41,31 @@
         <div>
             <h1 class="headings">Contact Me</h1>
             </div><br>
-            
+
+            <?php
+		$name = $email = $contBack = $comment = "";
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			$name = cleanInput($_POST["name"]);
+			$email = cleanInput($_POST["email"]);
+			$contBack = cleanInput($_POST["contact-back"]);
+			$comment = cleanInput($_POST["comments"]);
+		}
+
+        function cleanInput($data) {
+			//POSSIBLE SOLUTION FOR STEP 2
+			$data = trim($data);
+			$data = stripslashes($data);
+			$data = htmlspecialchars($data);
+			//SOLUTION FOR STEP 3
+			return $data;
+		}
+	?>
+
+       
             
  <div>
+ <form action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method="POST">
 <form style="text-align: center;" >
     <label>Name:</label>
     <input type="text" name="name"> <br><br>
@@ -73,9 +95,28 @@
            <input type ="submit" value="Submit">
 
         </div>
+        <?php if ($_SERVER["REQUEST_METHOD"] == "POST") { ?>
+	
+	<section id="results" style="background-color: lightsteelblue;">
+		<div class="container py-2" >
+			<div class="row ">
+				<h1>Form Entries:</h1>
+			</div>
+			<div class="row">				
+				<ul>
+					<?php
+					if ($name !== "") { echo "<li>NAME: $name </li>"; } 
+					if ($email !== "") { echo "<li>EMAIL: $email </li>"; }
+					if ($contBack !== "") { echo "<li>CONTACT BACK: $contBack </li>"; }
+					if ($comment !== "") { echo "<li>COMMENT: $comment </li>"; }
+					?>
+				</ul>		
+			</div>
+		</div>
 </form>
-
+<?php } ?>
 </div>
+
 <br>
 <br>
 <br>
